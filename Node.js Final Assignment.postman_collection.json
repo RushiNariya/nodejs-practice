@@ -1,0 +1,834 @@
+{
+	"info": {
+		"_postman_id": "e2462286-9da9-4f9e-9a8f-f30cbdf28778",
+		"name": "Node.js Final Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Cars",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "10301030",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/car/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Cars",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "10301030",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/car/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1436"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"59c-S3e890Wqp2DSRniGlGOOadeIbAk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Feb 2021 12:09:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 4,\n            \"carname\": \"A6\",\n            \"modelname\": \"Diesel\",\n            \"makername\": \"Audi\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 5,\n            \"carname\": \"X3\",\n            \"modelname\": \"Petrol\",\n            \"makername\": \"BMW\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 6,\n            \"carname\": \"Ertiga\",\n            \"modelname\": \"CNG\",\n            \"makername\": \"Suzuki\",\n            \"image\": [\n                \"http://localhost:3000/public/images/image-1612437459066.jpg\",\n                \"http://localhost:3000/public/images/image-1612437503092.png\"\n            ]\n        },\n        {\n            \"id\": 7,\n            \"carname\": \"S-cross\",\n            \"modelname\": \"Diesel\",\n            \"makername\": \"Suzuki\",\n            \"image\": [\n                \"http://localhost:3000/public/images/image-1612097550925.jpg\"\n            ]\n        },\n        {\n            \"id\": 8,\n            \"carname\": \"Creta\",\n            \"modelname\": \"Diesel\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                \"http://localhost:3000/public/images/image-1612096978783.jpg\",\n                \"http://localhost:3000/public/images/image-1612097509552.jpg\"\n            ]\n        },\n        {\n            \"id\": 9,\n            \"carname\": \"posted car\",\n            \"modelname\": \"sportz\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 10,\n            \"carname\": \"Verna\",\n            \"modelname\": \"sportz\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 42,\n            \"carname\": \"Creta2021 edition\",\n            \"modelname\": \"Diesel\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 43,\n            \"carname\": \"Creta2021.1\",\n            \"modelname\": \"CNG\",\n            \"makername\": \"Hyundaii\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 45,\n            \"carname\": \"Creta2021\",\n            \"modelname\": \"CNG\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                null\n            ]\n        },\n        {\n            \"id\": 46,\n            \"carname\": \"Venue 2021\",\n            \"modelname\": \"CNG\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                \"http://localhost:3000/public/images/image-1612440161369.png\"\n            ]\n        },\n        {\n            \"id\": 47,\n            \"carname\": \"Venue\",\n            \"modelname\": \"CNG\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                null\n            ]\n        }\n    ],\n    \"message\": \"Record listed successfully!!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Car By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "1030",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/car/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Car By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1030",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/car/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car",
+								"8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "256"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"100-T/hPlm7AyjzASBXKGwKhTMm2VG0\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Feb 2021 11:43:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 8,\n            \"carname\": \"Creta\",\n            \"modelname\": \"Diesel\",\n            \"makername\": \"Hyundai\",\n            \"image\": [\n                \"http://localhost:3000/public/images/image-1612096978783.jpg\",\n                \"http://localhost:3000/public/images/image-1612097509552.jpg\"\n            ]\n        }\n    ],\n    \"message\": \"Record listed successfully!!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create New Car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "1030",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "carname",
+							"value": "Venue",
+							"type": "text"
+						},
+						{
+							"key": "makename",
+							"value": "Hyundai",
+							"type": "text"
+						},
+						{
+							"key": "modelname",
+							"value": "CNG",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/car/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"cars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create New Car",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1030",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "carname",
+									"value": "Venue",
+									"type": "text"
+								},
+								{
+									"key": "makename",
+									"value": "Hyundai",
+									"type": "text"
+								},
+								{
+									"key": "modelname",
+									"value": "CNG",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/car/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car",
+								"cars"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3c-FOkWabtR4T6lNaXMcWpcwmWW4dk\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Feb 2021 11:54:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"result.rows\",\n    \"message\": \"Car Added successfully!!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Car",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "1030",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "carname",
+							"value": "Venue 2021",
+							"type": "text"
+						},
+						{
+							"key": "makename",
+							"value": "Hyundai",
+							"type": "text"
+						},
+						{
+							"key": "modelname",
+							"value": "CNG",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/car/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"46"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Car",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1030",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "carname",
+									"value": "Venue 2021",
+									"type": "text"
+								},
+								{
+									"key": "makename",
+									"value": "Hyundai",
+									"type": "text"
+								},
+								{
+									"key": "modelname",
+									"value": "CNG",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/car/46",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car",
+								"46"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3e-vnimmNMXETLX2UIyOLOp41zN/Lc\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Feb 2021 11:58:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"result.rows\",\n    \"message\": \"Car Updated successfully!!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Upload Car Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "1030",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "carpicture",
+							"type": "file",
+							"src": "/C:/Users/Rushi_Nariya/Downloads/Note_20_ultra.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/car/upload/46",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"upload",
+						"46"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Upload Car Image",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1030",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "carpicture",
+									"type": "file",
+									"src": "/C:/Users/Rushi_Nariya/Downloads/Note_20_ultra.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/car/upload/46",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car",
+								"upload",
+								"46"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "79"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4f-6p+UYnn87aWF3dDoCFHJMjHGw30\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Feb 2021 12:02:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        \"image-1612440161369.png\"\n    ],\n    \"message\": \"Image uploaded successfully!!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "1030",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Email",
+							"value": "rn11@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1030",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Email",
+									"value": "rn11@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-4t0dMdntqk7JGP58SwkRGuhsac4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 04 Feb 2021 12:08:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTI0NDA1Mjh9.pvNA9yK-XeT5w6DVgiI9rzLuySwpt_Ask8eooYZeQOc\",\n    \"message\": \"User Login successfully!!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "1030",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/car/53",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"car",
+						"53"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Car",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6MSwiRW1haWwiOiJybjExQGdtYWlsLmNvbSIsIlVzZXJuYW1lIjoicnVzaGkiLCJpYXQiOjE2MTIyNzkxNDJ9.iVwxpKc_sdJnwiwbLOHKGYuc4zoSP6CX3zptgFM7iAs",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "1030",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/car/53",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"car",
+								"53"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3c-D2wROeMUdXcwXWBXcjA8gL5fQjw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 05 Feb 2021 07:54:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        \"success\"\n    ],\n    \"message\": \"Car deleted successfully!!!\"\n}"
+				}
+			]
+		}
+	]
+}
